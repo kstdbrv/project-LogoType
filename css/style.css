@@ -334,3 +334,79 @@ color: #5e5e5e;
 letter-spacing: 0.01em;
 line-height: 18px;
 }
+
+.form {
+  padding-top: 30px;
+}
+
+.form_inner {
+  background-image: url(../img/form-fon.png);
+  min-height: 459px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  
+}
+
+.form_box {
+  max-width: 849px;
+  padding-top: 40px;
+  padding-bottom: 42px;
+}
+
+.form_box-inner {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.form_box-left {
+max-width: 264px;
+width: 100%;
+}
+
+.form_box-right {
+  max-width: 557px;
+width: 100%;  
+}
+
+.form_box-inner label,
+.form_box-inner input,
+.form_box-inner textarea,
+.form_box-inner select {
+  display: block;
+  width: 100%;
+  outline: none;
+}
+
+.form_box-inner label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+color: #282828;
+line-height: 36px;
+}
+
+.form_box-inner input {
+  margin-bottom: 15px;
+  border: 1px solid #e6e6e6;
+  height: 40px;
+  padding: 0 10px;
+}
+
+.form_box-inner select {
+  border: 1px solid #e6e6e6;
+  height: 40px;
+  padding: 0 10px;
+}
+
+.form_box-inner textarea {
+  border: 1px solid #e6e6e6;
+  height: 222px;
+  resize: none;
+  padding: 10px;
+}
+
+.form_box-inner button {
+background-color: transparent;
+color:#282828;
+
+}
