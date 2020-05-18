@@ -371,8 +371,8 @@ width: 100%;
 
 .form_box-inner label,
 .form_box-inner input,
-.form_box-inner textarea,
-.form_box-inner select {
+.form_box-inner textarea
+ {
   display: block;
   width: 100%;
   outline: none;
@@ -392,10 +392,66 @@ line-height: 36px;
   padding: 0 10px;
 }
 
-.form_box-inner select {
-  border: 1px solid #e6e6e6;
+.form_box-inner .jq-selectbox.jqselect {
+display: block;
+width: 100%;
+border: 1px solid #e6e6e6;
   height: 40px;
   padding: 0 10px;
+}
+
+.form_box-inner .jq-selectbox__trigger-arrow::before {
+  content: "\f105";
+  font-family: 'icomoon';
+  position: absolute;
+  right: 10px;
+  top: 1px;
+transform: rotate(90deg);
+color:#6b6a6a;
+}
+
+.form_box-inner .jq-selectbox__dropdown {
+	width: 100%;
+	margin: 2px 0 0;
+	padding: 0;
+	border: 1px solid #e6e6e6;
+	background: #FFF;
+box-shadow: 0 2px 10px rgba(0,0,0,.2);
+}
+
+.form_box-inner .jq-selectbox ul {
+	margin: 0;
+	padding: 0;
+}
+.form_box-inner .jq-selectbox li {
+	min-height: 18px;
+	padding: 5px 17px 6px;
+	color: #231F20;
+}
+.form_box-inner .jq-selectbox li.selected {
+	background-color: #A3ABB1;
+	color: #FFF;
+}
+.form_box-inner .jq-selectbox li:hover {
+	background-color: #08C;
+	color: #FFF;
+}
+.form_box-inner .jq-selectbox li.disabled {
+	color: #AAA;
+}
+.form_box-inner .jq-selectbox li.disabled:hover {
+	background: none;
+}
+.form_box-inner .jq-selectbox li.optgroup {
+	font-weight: bold;
+}
+.form_box-inner .jq-selectbox li.optgroup:hover {
+	background: none;
+	color: #231F20;
+	cursor: default;
+}
+.form_box-inner .jq-selectbox li.option {
+	padding-left: 25px;
 }
 
 .form_box-inner textarea {
@@ -408,5 +464,65 @@ line-height: 36px;
 .form_box-inner button {
 background-color: transparent;
 color:#282828;
-
+margin-top: 49px;
+float: right;
 }
+
+.advantages {
+  background:url(../img/adv-fon.jpg) no-repeat center; 
+background-size: cover;
+/* background-repeat:no-repeat;
+background-position:center; */
+min-height:287px;
+}
+
+
+.advantages-box {
+  position: relative;
+  text-align: center;
+  max-width: 360px;
+}
+
+.advantages__inner {
+display: flex;
+justify-content: space-between;
+}
+
+.advantages-box__item {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: #ffc222;
+  border: 2px solid #ffc222;
+  background-color: transparent;
+  margin: 55px 0 28px 0;
+  padding: 0 5px;
+}
+
+.advantages-box__item::before {
+  font-family: 'icomoon';
+  content: "\f00c";
+  position: absolute;
+  color: #ffffff;
+  left: 172px;
+  top: 65px;
+}
+
+.advantages-box__title {
+  font-family: 'Roboto', sans-serif;
+font-size: 18px;
+font-weight: 500;
+color: #ffffff;
+line-height: 24px;
+margin-bottom: 20px;
+}
+
+.advantages-box__text {
+  font-size: 14px;
+  color: #d3d2d2;
+  letter-spacing: 0.01em;
+  line-height: 24px;
+}
+
+
+
