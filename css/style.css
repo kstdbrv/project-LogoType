@@ -585,23 +585,73 @@ background-position:center; */
 .news{
   background-color: #f9f9f9;
 }
+
+.news__top{
+  margin-top: 65px;
+}
 .news__inner {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  margin-bottom: 108px;
+}
+.news__inner::after{
+  content: "\f10e";
+  font-family: "icomoon";
+  position: absolute;
+  color: #ffffff;
+  top: 6px;
+  left: 90px;
+}
+.news__inner::before{
+  content:"";
+  position: absolute;
+  height: 31px;
+  width: 65px;
+  background-color: #ffc222;
+  top: 0;
+  left: 65px;
 }
 
 .news__slider {
   max-width: 555px;
   width: 100%;
   background-color: #fff;
+  padding: 60px 35px 50px 70px;
+  box-shadow: 4px 6px 24px 3px rgba(91, 89, 89, 0.14);
+}
+
+.news__slider-title{
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+color: #242424;
+letter-spacing: 0.05em;
+line-height: 24px;
+width:395px;
+}
+.news__slider-text{
+  font-size: 14px;
+color: #5e5e5e;
+letter-spacing: 0.01em;
+line-height: 18px;
+margin: 20px 0 40px 0;
+width: 448px;
+}
+
+.news__slider-author{
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+color: #212020;
+letter-spacing: 0.01em;
+line-height: 18px;
 }
 
 .news__blog {
   max-width: 260px;
   width: 100%;
   position: relative;
+  margin-left: 31px;
 }
-
 .news__date{
   position: absolute;
   height: 54px;
@@ -611,4 +661,37 @@ color:#f9f9f9;
 text-align: center;
 top: -1px;
     left: 10px;
+    font-size: 14px;
+font-weight: bold;
+padding-top: 31px;
+}
+
+.news__blog-title{
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+font-weight: 500;
+color: #242424;
+letter-spacing: 0.05em;
+margin: 20px 0 17px 0;
+
+}
+.news__blog-text{
+  font-size: 14px;
+  color: #5e5e5e;
+  letter-spacing: 0.01em;
+  line-height: 18px;
+}
+.news__slider-inner .slick-btn{
+  top: 133%;
+  right: -35px;
+  
+}
+.news__slider-inner .slick-btn.slick-prev{
+  left: 375px;
+}
+.news__slider-inner .slick-btn.slick-disabled{
+  border: 1px solid #908e8e;
+}
+.news__slider-inner .slick-btn.slick-disabled::before {
+  color:#908e8e;
 }
