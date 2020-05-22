@@ -784,3 +784,33 @@ letter-spacing: 0.05em;
 text-align: center;
 line-height:43px;
 }
+
+#modal{
+  width:300px;
+}
+
+#modal input{
+  font-family: "Roboto", sans-serif;
+  display: block;
+  margin-bottom: 15px;
+  border: 1px solid #e6e6e6;
+  height: 40px;
+  padding: 0 10px;
+  width: 100%;
+  outline: none;
+}
+
+#modal input[type="submit"]{
+  background-color:#ffc222;
+  color:#1b1b1b;
+  border:none;
+  cursor: pointer;
+  letter-spacing: 0.2em;
+}
+#modal input[type="submit"]:hover{
+color: #050505;
+}
+#modal input[type="submit"]:active{
+  background-color:white;
+  outline: 1px solid #ffc222;
+}
