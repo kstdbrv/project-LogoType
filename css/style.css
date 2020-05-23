@@ -47,6 +47,14 @@ header {
   position: relative;
 }
 
+.header__btn:hover {
+  transition: all 0.3s;
+color:#fff;
+}
+.header__btn:active {
+  color: #1b1b1b;
+}
+
 .header__btn:before {
   content: "\f0b1";
   font-family: "icomoon";
@@ -73,7 +81,13 @@ header {
   padding-left: 20px;
   padding-right: 30px;
 }
-
+.header__phone:hover{
+  color:#fff;
+  transition: all 0.3s;
+}
+.header__phone:active{
+  color: #cbcacb;
+}
 .header__phone:before {
   content: "\f095";
   font-family: "icomoon";
@@ -81,11 +95,16 @@ header {
   left: 0;
   color: #ffc222;
 }
-
 .header__email {
   padding-left: 24px;
 }
-
+.header__email:hover{
+  color:#fff;
+  transition: all 0.3s;
+}
+.header__email:active{
+  color: #cbcacb;
+}
 .header__email:before {
   content: "\f003";
   font-family: "icomoon";
@@ -175,7 +194,15 @@ header {
   z-index: 2;
   outline: none;
 }
-
+.default-btn:hover{
+  background-color:#ffc222;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+.default-btn:active{
+  background-color:transparent;
+  color:#ffc222;
+}
 .default-btn:after {
   content: "\f105";
   font-family: "icomoon";
@@ -183,6 +210,7 @@ header {
   top: 50%;
   transform: translateY(-50%);
   right: -12px;
+  color: #fff;;
 }
 
 .slider__inner {
@@ -201,7 +229,12 @@ header {
   outline: none;
   background-color: #ffc222;
 }
-
+.slick-btn:hover{
+  
+}
+.slick-btn:active{
+  background-color:transparent;
+}
 .slick-btn.slick-disabled {
   cursor: default;
   background-color: transparent;
@@ -215,7 +248,6 @@ header {
   font-family: "icomoon";
   color: #fff;
 }
-
 .slick-next:before {
   content: "\f105";
 }
@@ -287,6 +319,24 @@ header {
   letter-spacing: 0.25px;
   padding: 5px 38px;
   border: 3px solid #e6e6e6;
+  background-color:#fff;
+}
+.services__btn a:hover{
+border: 3px solid #ffc222;
+transition: all 0.3s;
+}
+
+.news__btn a:hover{
+  border: 3px solid #ffc222;
+  transition: all 0.3s;
+}
+.services__btn a:active{
+  border: 3px solid #e6e6e6;
+}
+
+.news__btn a:active{
+  color: #373636;
+  border: 3px solid #e6e6e6;
 }
 
 .services__items {
@@ -328,6 +378,12 @@ header {
 .services__item-btn .default-btn {
   color: #373636;
 }
+.services__item-btn .default-btn:hover{
+  color: #fff;
+}
+.services__item-btn .default-btn:active{
+  color: #050505;
+}
 
 .services__item-btn .default-btn:after {
   color: #fff;
@@ -338,6 +394,14 @@ header {
   font-family: "Roboto", sans-serif;
   border-bottom: 1px solid #050505;
   margin-right: 60px;
+}
+.services__item-link:hover{
+  color:#ffc222;
+  border-bottom:none;
+}
+.services__item-link:active{
+  color: #050505;
+  border-bottom:none;
 }
 
 .about {
@@ -526,7 +590,14 @@ header {
   margin-top: 49px;
   float: right;
 }
-
+.form_box-inner button:hover{
+  background-color:#ffc222;
+  color: #ffffff;
+}
+.form_box-inner button:active{
+  color: #282828;
+  background-color: transparent;
+}
 .advantages {
   background: url(../img/adv-fon.jpg) no-repeat center;
   background-size: cover;
@@ -684,8 +755,25 @@ margin: 20px 0 17px 0;
 .news__slider-inner .slick-btn{
   top: 133%;
   right: -35px;
-  
 }
+.news__slider-inner .slick-btn:hover{
+  background-color:#fff;
+  border:1px solid #ffc222;
+  color:#ffc222;
+  transition: all 0.3s;
+}
+.news__slider-inner .slick-btn:active{
+ background-color:#ffc222;
+}
+.news__slider-inner .slick-btn:hover:before{
+  color:#908e8e;
+  opacity: 1;
+  transition: all 0.3s;
+ } 
+ .news__slider-inner .slick-btn:active:before{
+  color:#fff;
+ } 
+
 .news__slider-inner .slick-btn.slick-prev{
   left: 375px;
 }
@@ -738,6 +826,12 @@ color: #ffffff;
 letter-spacing: 0.03em;
 padding-top: 27px;
 }
+.footer__list li a:hover{
+  color: #cbcacb;
+}
+.footer__list li a:active{
+  color: #ffffff;
+}
 
 .footer__list li {
   margin-top: 10px;
@@ -770,11 +864,6 @@ position: relative;
   padding-top: 41px;
 }
 
-/* .footer__map iframe {
-  max-width:632px;
-  width: 100%; 
-  height:251px;
-} */
 .footer__rights {
   height: 43px;
 background-color: #303030;
@@ -801,16 +890,20 @@ line-height:43px;
 }
 
 #modal input[type="submit"]{
+  font-size: 1.2em;
   background-color:#ffc222;
-  color:#1b1b1b;
+  color: #fff;
+  
   border:none;
   cursor: pointer;
   letter-spacing: 0.2em;
 }
 #modal input[type="submit"]:hover{
-color: #050505;
+  
+  box-shadow:inset 0 0 5px 0 white; 
 }
 #modal input[type="submit"]:active{
   background-color:white;
   outline: 1px solid #ffc222;
+  color:#1b1b1b;
 }
