@@ -155,8 +155,21 @@ padding-bottom: 20px;
 		float: none;
 	}
 	.news__blog-text{
-    margin-bottom: 35px;
+    margin-bottom: 45px;
 	}
+	.news__slider-inner .slick-prev {
+    right: 50px;
+}
+	.news__slider-inner .slick-next {
+    right: -14px;
+}
+}
+ @media(max-width:425px){
+	.footer__rights {
+		line-height: 24px;
+		padding: 8px 0;
+} 
+
 }
 @media(max-width:414px){
 	
