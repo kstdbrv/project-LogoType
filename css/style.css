@@ -817,8 +817,6 @@ margin: 20px 0 17px 0;
 
 .footer__top {
   background-color: #595959;
-  height: 339px;
- 
 }
 .footer__inner{
   display: flex;
@@ -839,7 +837,7 @@ padding-bottom: 20px;
   font-size: 14px;
 color: #d3d2d2;
 line-height: 18px;
-width: 366px;
+max-width: 366px;
 padding-bottom: 30px;
 }
 .footer__item .header__btn {
@@ -889,6 +887,11 @@ position: relative;
 }
 .footer__map{
   padding-top: 41px;
+  max-width: 631px;
+    width: 100%;
+}
+.footer__map iframe{
+  width: 100%;
 }
 
 .footer__rights {
@@ -903,6 +906,11 @@ line-height:43px;
 
 #modal{
   width:300px;
+}
+clearfix::before {
+  content:"";
+  clear: both;
+  display: block;
 }
 
 #modal input{

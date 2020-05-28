@@ -12,6 +12,7 @@
 }
 .news__inner{
 	display: block;
+	margin-bottom: 50px;
 }
 .news__slider{
 	max-width: 100%;
@@ -33,6 +34,13 @@
 }
 .news__blog-title{
 	padding: 10px 0;
+}
+.footer__inner{
+  display: block;
+}
+.footer__map{
+	padding-top: 0;
+	max-width: 100%;
 }
 }
 @media(max-width:900px){
@@ -83,6 +91,9 @@ display: block;
 max-width: 70%;
 margin: 0 auto;
 padding-bottom: 20px;
+}
+.footer__item .header__btn::before {
+	display: inline-block;
 }
 }
 @media(max-width:700px){
