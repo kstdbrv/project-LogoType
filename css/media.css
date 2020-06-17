@@ -72,16 +72,16 @@ display: none!important;
 text-align: center;
 margin-top: 20px;
 }
-.form_box-inner{
+.form__box-inner{
 display: block;
 }
-.form_box-left, .form_box-right{
+.form__box-left, .form__box-right{
 	max-width: 100%;
 }
-.form_box-right{
+.form__box-right{
 	margin-top: 10px;
 }
-.form_box{
+.form__box{
 	padding-bottom: 140px;
 }
 .advantages__inner{
