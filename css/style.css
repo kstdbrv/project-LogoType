@@ -695,6 +695,15 @@ background-position:center; */
 }
 .news__images{
   position: relative;
+  display: inline-block;
+    overflow: hidden;
+}
+.news__images img{
+  transition: 1s; /* Время эффекта */
+  display: block;
+}
+.news__images img:hover{
+  transform: scale(1.2);
 }
 .news__date{
   position: absolute;
@@ -720,6 +729,12 @@ background-position:center; */
   letter-spacing: 0.1px;
   color: #5e5e5e;
 }
+.news__blog-text:hover{
+  color: #242424;:
+}
+.news__blog-text:active{
+  color: #242424;:
+}
 .news__slider-title{
   font-size: 18px;
   line-height: 24px;
@@ -731,6 +746,12 @@ background-position:center; */
 }
 .news__slider-text{
   margin-bottom: 30px;
+}
+.news__slider-text:hover{
+  color: #242424
+}
+.news__slider-text:active{
+  color: #5e5e5e;
 }
 .news__slider-author{
   letter-spacing: 0.1px;

@@ -26,6 +26,7 @@
  .news__blog {
 	display: block;
 	max-width: 100%;
+	margin-bottom: 35px;
 }
 .news__blog::after{
 	content:"";
