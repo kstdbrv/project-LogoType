@@ -490,7 +490,7 @@ transition: all 0.3s;
 .form__box-inner input,
 .form__box-inner textarea {
   display: block;
-  width: 100%;advantages-box__item
+  width: 100%;
   outline: none;
 }
 
@@ -730,10 +730,10 @@ background-position:center; */
   color: #5e5e5e;
 }
 .news__blog-text:hover{
-  color: #242424;:
+  color: #242424;
 }
 .news__blog-text:active{
-  color: #242424;:
+  color: #242424;
 }
 .news__slider-title{
   font-size: 18px;

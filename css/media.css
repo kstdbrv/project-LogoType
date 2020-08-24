@@ -160,16 +160,16 @@ padding-bottom: 20px;
 	}
 	.news__slider-inner .slick-prev {
     right: 50px;
-}
+ 	}
 	.news__slider-inner .slick-next {
     right: -14px;
-}
+	}
 }
  @media(max-width:425px){
 	.footer__rights {
 		line-height: 24px;
 		padding: 8px 0;
-} 
+	} 
 
 }
 @media(max-width:414px){
@@ -192,8 +192,8 @@ display: block;
 @media(max-width:388px){
 	.header__phone {
     padding-right: 10px;
+ }
 }
-
 @media(min-width:700px){
 	.menu ul{
 		display: block !important;
