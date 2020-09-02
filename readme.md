@@ -1,3 +1,3 @@
 gh-pages:
 
-https://kstdbrv.github.io/projectFree_1
+https://kstdbrv.github.io/project-LogoType
